@@ -2,13 +2,11 @@ react
 
 
 
- ##react hook의 usestate가 어떻게 내부적으로 동작하는가?
+ # react hook의 usestate가 어떻게 내부적으로 동작하는가?
 
 
 
-그동안 깃헙에 올리지는 않았지만 알고리즘공부와 같이 react로  project를 만들던 도중에 내가 이것을 진짜 알고 쓰는 게 아니라 그냥 남의 코드 배껴오는 것에서  현타가 왔다. 그래서 usestate가 어떻게 동작
-
-하는지에 대하여 알아 보았다.
+그동안 깃헙에 올리지는 않았지만 알고리즘공부와 같이 react로  project를 만들던 도중에 내가 이것을 진짜 알고 쓰는 게 아니라 그냥 남의 코드 배껴오는 것에서  현타가 왔다. 그래서 usestate가 어떻게 동작 하는지에 대하여 알아 보았다.
 
 
 
@@ -17,20 +15,15 @@ react
 앞으로 react 공식문서의 설명을 다시한번 곱씹어볼 예정이다. fe 개발자로 하엳금 편하게 만들어진 jsx등도 정확히 어떻게 동작하는지 공부하겠다
 
 
- ##react hook의 usestate가 어떻게 내부적으로 동작하는가?
-
-그동안 깃헙에 올리지는 않았지만 알고리즘공부와 같이 react로  project를 만들던 도중에 내가 이것을 진짜 알고 쓰는 게 아니라 그냥 남의 코드 배껴오는 것에서  현타가 왔다. 그래서 usestate가 어떻게 동작
-하는지에 대하여 알아 보았다.
-
-
-앞으로 react 공식문서의 설명을 다시한번 곱씹어볼 예정이다. fe 개발자로 하엳금 편하게 만들어진 jsx등도 정확히 어떻게 동작하는지 공부하겠다.
-
-
-
-usestate는 어떻게 동작하는가?
+## usestate는 어떻게 동작하는가?
 
 react hook의 usestate는 closure로 이루어저 있다. 
-clousre는 c++의 private과 비슷하다고 이해하였는데 왜쓰이는가를 찾아보면 변수를 private하게 사용하여 변수충돌이 일어나는 것을 막게 하기 위해서 이다.closure라는 개념으로도 하나의 readmefile이 생기므로 다음 시간에 다루도록 하겠다.만약 이글이 이해가 되지 않는다면 js의 executional context와 clousre개념을 숙지하고 읽어보기를 바란다.
+
+clousre는 c++의 private과 비슷하다고 이해하였는데 왜쓰이는가를 찾아보면 변수를 private하게 사용하여 변수충돌이 일어나는 것을 막게 하기 위해서 이다.
+
+closure라는 개념으로도 하나의 readmefile이 생기므로 다음 시간에 다루도록 하겠다.
+
+만약 이글이 이해가 되지 않는다면 js의 executional context와 clousre개념을 숙지하고 읽어보기를 바란다.
  
 ```
 function useState(initialValue) {
