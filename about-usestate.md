@@ -50,6 +50,6 @@ console.log(foo()) // 1 출력 - 동일한 호출하지만 새로운 initialValu
 2.console.log(foo)->setFoo(1)->console.log(foo)가 순차적으로 실행된다.
 
 3.그러면 console.log에서 foo를 호출하게될 떄 main flow가 foo로 옮겨지게 된다.
+[
 
-
-4.
+4.https://velog.io/@tjdgus3160/React-Virtual-DOM)
